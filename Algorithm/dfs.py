@@ -41,5 +41,4 @@ g.add_edge(5,8)
 g.add_edge(3,6)
 g.add_edge(9,6) 
   
-print("Following is DFS from (starting from vertex 2)") 
 g.dfs(1,8)
