@@ -34,14 +34,17 @@ class TopologicalSort:
 
 
 if __name__ == "__main__":
-    g = TopologicalSort(6)
+    g = TopologicalSort(2)
 
-    g.add_edge(5, 2)
-    g.add_edge(5, 0)
-    g.add_edge(4, 0)
-    g.add_edge(4, 1)
-    g.add_edge(2, 3)
-    g.add_edge(3, 1)
+    # g.add_edge(5, 2)
+    # g.add_edge(5, 0)
+    # g.add_edge(4, 0)
+    # g.add_edge(4, 1)
+    # g.add_edge(2, 3)
+    # g.add_edge(3, 1)
+
+    g.add_edge(0, 1)
+    g.add_edge(1, 0)
 
     g.topological_sort()
 
