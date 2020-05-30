@@ -11,4 +11,4 @@ class Solution:
                 A[i] = False
             pre = curr
         
-        return A
+        return 
