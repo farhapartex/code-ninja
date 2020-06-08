@@ -14,10 +14,7 @@ class KruskalMst:
         self.parent[n] = n
     
     def find(self,u):
-        if self.parent[u] == u:
-            return u
-        else:
-            return self.find(self.parent[u])
+        return u if self.parent[u] == u else self.find(self.parent[u])
     
     def kruskal(self):
         result = []
